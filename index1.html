@@ -1,0 +1,17 @@
+<body id="body">
+    <button onclick="changeBgColor('red')">red</button>
+    <button onclick="changeBgColor('green')">green</button>
+    <button onclick="changeBgColor('blue')">blue</button>
+    <button onclick="changeBgColor('yellow')">yellow</button>
+    <button onclick="changeBgColor('black')">black</button>
+</body>
+<script>
+
+    setInterval(function() {
+        var color = ['red', 'green', 'blue','black','yellow']
+        var random = color[Math.floor(Math.random() * 5)];
+        document.body.style.backgroundColor = random ;
+    }, 70);
+    
+    
+    </script>
